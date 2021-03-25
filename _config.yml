@@ -1,19 +1,19 @@
 title : mp-strumenti.it
 baseurl: "http://mp-strumenti.it"
-description: "Strumenti musicali per passione"
+description: "Handmade guitars and basses for passion and hobby. Based in Rome, Italy."
 feed-description: "RSS Feeds for the website"
 copyright: "2020"
 markdown: kramdown
 
-greeting: "mp-strumenti"
-headline: "Strumenti musicali per passione"
+greeting: "Welcome"
+headline: "Handmade guitars and basses for passion and hobby. Based in Rome, Italy."
 
 
 image: /assets/img/og-image.png
 
 author :
-  name : mp-strumenti
-  headline: "Strumenti musicali per passione"
+  name : MP Strumenti
+  headline: "Handmade guitars and basses for passion and hobby. Based in Rome, Italy."
   image: assets/img/pic-72.jpg
   avatar: 
     src : assets/img/avatar.jpg

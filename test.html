@@ -1,0 +1,281 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,900;1,500;1,900&family=Source+Code+Pro&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400;1,900&display=swap" rel="stylesheet"> 
+  
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  
+  
+<style>
+    .bgimage, .card-img-top {
+  width:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+.bgimage.hero{
+    height:80vh;
+}
+
+.bgimage.bgimg{
+    height:300px
+}
+.bgimage h5 {
+  color:white;
+  text-shadow:2px 2px #333;
+}
+
+
+h1,h2,h3,h4,h5,h6, li, a  {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p, .display{
+    font-family:'Playfair Display', serif;
+}
+
+.card-img-top{
+    height:240px
+}
+
+.mt-25{
+    margin-top:25vh
+
+}
+
+.hero{
+    letter-spacing: 0.25em;
+}
+
+
+.betweenHR {
+  overflow: hidden;
+  text-align: center;
+}
+
+.betweenHR:before,
+.betweenHR:after {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  max-width:240px
+}
+
+.betweenHR:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.betweenHR:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+</style>
+</head>
+<body>
+
+    <nav class="site-header sticky-top py-1" style="background-color:#fff">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#">
+            <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="36"
+   height="36"
+   viewBox="0 0 20 20"
+   version="1.1"
+   id="svg5915"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="logoCircle20mm.svg">
+  <defs
+     id="defs5909" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="113.62175"
+     inkscape:cy="108.56845"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="3840"
+     inkscape:window-height="2088"
+     inkscape:window-x="0"
+     inkscape:window-y="72"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5912">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-277)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.52787906;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 2.5005859,287.13699 c 1.8527108,0.004 3.4397762,-3.09618 3.6274311,-2.31713 1.2220378,4.25801 2.998226,4.38426 5.049667,-0.0479 4.134584,5.19711 7.768031,0.13702 5.203475,-0.0798 -0.53335,0.0846 -0.834664,0.3982 -1.240454,0.73509 -0.497441,0.50255 -3.270561,3.54403 -3.53156,4.2027"
+       id="path821-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.26719174;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5923"
+       cx="10"
+       cy="287"
+       rx="8.8664036"
+       ry="8.8664045" />
+  </g>
+</svg>
+          </a>
+          <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+        </div>
+      </nav>
+
+
+<div class="px-md-5">
+<section class="bgimage hero" style="
+background: url('https://images.unsplash.com/photo-1525201548942-d8732f6617a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3900&q=80');">
+    <div class="row mx-0 px-0">
+      <div class="col-md-12 col-sm-12 col-xs-12 mt-25">
+          <h1 class="display-2 text-white font-weight-light py-3 text-uppercase text-center">Welcome</h1>
+        <h5 class="lead text-uppercase py-3 font-weight-light text-center font-weight:bold">Handmade guitars and basses for passion and hobby. Based in Rome, Italy.</h5>
+        <h5 class="lead text-uppercase py-3 font-weight-light text-center font-weight:bold betweenHR">MP Strumenti</h5>
+    
+    </div>
+    </div>
+</section>
+</div>
+
+
+
+<section class="pt-5 container">
+<div class="row mt-5 mb-5  sticky-top text-center" style="background:white; top:50px">
+    <h2 class="display-3 mb-5 text-center"><span class="text-muted">Serie</span> Pragma</h2>
+
+</div>
+    
+        <div class="row">
+            <div class="col-md-8">
+                <img class="bgimage bgimg" src="https://images.unsplash.com/photo-1601956349582-ba50bedaa8ea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80">
+                
+            </div>
+            <div class="col-md-4">
+                <div class="row m-3">
+                <blockquote class="blockquote">
+                    <p class="">The elements of every concept enter into logical thought at the gate of perception and make their exit at the gate of purposive action</p>
+                    <footer class="blockquote-footer m-3">Charles S. Peirce [1903], <cite title="Source Title">Harvard Lectures on Pragmatism: Lecture VII</cite></footer>
+                  </blockquote>
+                </div>
+                <div class="row m-3">
+                    <a class="btn btn-outline-primary btn-block">Read more about the Pragma serie</a>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5">
+        <div class="card-deck">
+
+            
+            <div class="card">
+                <div class="card-header bg-transparent">Pragma G6</div>
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1592051148515-c5c06b3f919a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer bg-transparent"><a href="test-focus.html">Read more</a></div>
+            </div>
+
+
+            <div class="card">
+
+            <div class="card-header bg-transparent">Pragma G6</div>
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1592922823354-c48e6d894bbe?ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer bg-transparent">Read more</div>
+          </div>
+            <div class="card">
+
+
+          <div class="card-header bg-transparent">Pragma B4</div>
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1540281772389-9c107ba8c7c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer bg-transparent">Read more</div>
+        </div>
+
+          </div>
+          </div>
+</section>
+
+
+<section class="pt-5 container">
+    <div class="row mt-5 mb-5  sticky-top text-center" style="background:white; top:50px">
+        <h2 class="display-3 mb-5 text-center">Modello Verso</h2>
+    
+    </div>
+        
+            <div class="row">
+                <div class="col-md-8">
+                    <img class="bgimage bgimg" src="https://images.unsplash.com/photo-1601956349582-ba50bedaa8ea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80">
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="row m-3">
+                    <blockquote class="blockquote">
+                        <p class="">The elements of every concept enter into logical thought at the gate of perception and make their exit at the gate of purposive action</p>
+                        <footer class="blockquote-footer m-3">Peirce, <cite title="Source Title">CP</cite></footer>
+                      </blockquote>
+                    </div>
+                    <div class="row m-3">
+                        <a class="btn btn-outline-primary btn-block">Read more about the Pragma serie</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    
+<footer style="height:30em"></footer>
+
+</body>
