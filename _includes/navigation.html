@@ -11,6 +11,13 @@
       <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
       <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
       <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+
+      {% assign navigation_pages = site.html_pages %}
+      {% for item in navigation_pages %}
+            <a href="{{ item.url }}" {% if item.url == page.url %}class="active"{% endif %}>
+              {{ item.title }}
+            </a>
+      {% endfor %}
     </div>
   </nav>
 <!--Navigation Ends-->
