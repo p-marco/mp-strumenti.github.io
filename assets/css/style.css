@@ -1,6 +1,6 @@
 
 
-.bgimage, .card-img-top {
+.bgimage, .card-img-top, .bgimage.hero {
 	width:100%;
 	background-repeat: no-repeat;
 	background-position: center;
