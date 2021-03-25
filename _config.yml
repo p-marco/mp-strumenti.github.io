@@ -48,7 +48,7 @@ lang: it
 
 # Manifest settings (Used to make manifest.json)
 # Edit manifest.json directly with icon information
-manifest_name: map-strumenti.it
+manifest_name: mp-strumenti.it
 manifest_short_name: "mp-strumenti.it" # Appears in "Add to home screen" dialogues
 manifest_lang: it
 manifest_background_color: white
