@@ -1,4 +1,11 @@
 
+.heroImage{
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	background-attachment: fixed;
+    filter: grayscale(50%) contrast(70%);
+}
 
 .bgimage, .card-img-top, .bgimage.hero {
 	width:100%;
