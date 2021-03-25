@@ -1,0 +1,72 @@
+
+
+
+.bgimage, .card-img-top {
+	width:100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	background-attachment: fixed;
+  }
+  
+  .bgimage.hero{
+	  height:80vh;
+  }
+  
+  .bgimage.bgimg{
+	  height:300px
+  }
+  .bgimage h5 {
+	color:white;
+	text-shadow:2px 2px #333;
+  }
+  
+  
+  h1,h2,h3,h4,h5,h6, li, a  {
+	  font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  p, .display{
+	  font-family:'Playfair Display', serif;
+  }
+  
+  .card-img-top{
+	  height:240px
+  }
+  
+  .mt-25{
+	  margin-top:25vh
+  
+  }
+  
+  .hero{
+	  letter-spacing: 0.25em;
+  }
+  
+  
+  .betweenHR {
+	overflow: hidden;
+	text-align: center;
+  }
+  
+  .betweenHR:before,
+  .betweenHR:after {
+	background-color: #fff;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 50%;
+	max-width:240px
+  }
+  
+  .betweenHR:before {
+	right: 0.5em;
+	margin-left: -50%;
+  }
+  
+  .betweenHR:after {
+	left: 0.5em;
+	margin-right: -50%;
+  }
