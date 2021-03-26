@@ -4,7 +4,7 @@
 	FRONTMATTER
 		Info:
 			website:	http://mp-strumenti.it 
-   			year:		2020
+   			year:		2020-2021
    			license: 	none (public domain)
    			author:		Marco Petolicchio
 		Table of contents:
@@ -29,7 +29,13 @@
 	/* MEDIA */
 		$media-l: 40em ;
         $media-xl: 64em ;
-        
+	/* COLOURS */
+		$color-grey--base: #708090;
+		$color-grey--light: #c2cfdc		;
+		$color-dark--base: #2e3943;
+		$color-accent--dark: #433927;
+		$color-accent--light: #908470;	
+		$color-accent--shine: #69a3dc;
 
 /*	FUNCTIONS */
 

@@ -7,7 +7,7 @@
 
       {% assign navigation_pages = site.html_pages %}
       {% for item in navigation_pages %}
-            <a href="{{ item.url }}" class="py-2 d-none d-md-inline-block{% if item.url == page.url %}active{% endif %}">
+            <a href="{{ item.url }}" class="py-2 d-none d-md-inline-block" {% if item.url == page.url %}class="active"{% endif %}>
               {{ item.title }}
             </a>
       {% endfor %}
