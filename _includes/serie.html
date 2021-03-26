@@ -1,3 +1,5 @@
 {% for serie in site.instruments.series %}
-    {{ serie.output }}
+    {% for model in serie %}
+        <h2>{{model.title}}</h2>
+    {% endfor %}
 {% endfor %}
