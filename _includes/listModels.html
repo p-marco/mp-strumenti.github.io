@@ -1,0 +1,19 @@
+
+
+{% assign itemsBySerie = site.instruments | group_by_exp:"instrument", "instrument.taxonomy.serie" %}
+    {% for serie in itemsBySerie %}
+    <section class="pt-5 container">
+
+        {% include serie.html %}
+
+
+
+        <div class="row pt-5">
+          <div class="card-deck">
+
+        {% for model in serie.items %}
+          {% include model.html %}
+        {% endfor%}
+        </div></div>
+    {% endfor %}
+    </section>

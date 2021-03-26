@@ -1,5 +1,5 @@
 ---
-title:                  "RIMA"
+name:                  "RIMA"
 images:
     thumbnail:          ""
     header:             ""
