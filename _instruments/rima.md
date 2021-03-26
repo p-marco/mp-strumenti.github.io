@@ -1,5 +1,6 @@
 ---
 name:                  "RIMA"
+tag:                    "Pragma"
 images:
     thumbnail:          ""
     header:             ""
