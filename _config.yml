@@ -32,11 +32,11 @@ sass:
 # Set collections
 collections:
   instruments:
-    output: false
+    output: true
     models:
       output: true
     series:
-      output: false
+      output: true
       pragma:
         output: true
         title: Serie Pragma
