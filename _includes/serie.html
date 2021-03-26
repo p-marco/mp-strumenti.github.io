@@ -1,5 +1,11 @@
 PROVA
 
+{% for model in site.instruments.series %}
+        SERIE
+{% endfor %}
+
+
 {% for model in site.instruments.series.pragma %}
+        MODEL
         <h2>{{model.title}}</h2>
 {% endfor %}
