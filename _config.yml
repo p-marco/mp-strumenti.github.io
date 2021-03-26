@@ -33,6 +33,8 @@ sass:
 collections:
   instruments:
     output: true
+  tags:
+    output: true
 plugins:
   - jekyll-sitemap
 
