@@ -33,13 +33,6 @@ sass:
 collections:
   instruments:
     output: true
-    models:
-      output: true
-    series:
-      output: true
-      pragma:
-        output: true
-        title: Serie Pragma
 plugins:
   - jekyll-sitemap
 

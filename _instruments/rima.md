@@ -4,6 +4,7 @@ images:
     thumbnail:          ""
     header:             ""
 taxonomy:
+    type:               "Serie"
     serie:              "Pragma"
     model:              "G6"
     variant:            ""
