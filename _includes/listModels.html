@@ -2,7 +2,6 @@
 
 {% assign itemsBySerie = site.instruments | group_by_exp:"instrument", "instrument.taxonomy.serie" %}
     {% for serie in itemsBySerie %}
-    <h2>{{serie.name}}</h2>
     <section class="pt-5 container">
 
 
@@ -24,7 +23,7 @@
                       </blockquote>
                     </div>
                     <div class="row m-3">
-                        <a class="btn btn-outline-primary btn-block">Read more about the {{ serie.name }}serie</a>
+                        <a class="btn btn-outline-primary btn-block">Read more about the {{ serie.name }} serie</a>
                     </div>
                 </div>
             </div>
@@ -32,6 +31,7 @@
 
 
         <div class="row pt-5">
+          <div class="row"><h3 class="display-4">Instruments</h3></div>
           <div class="card-deck">
 
         {% for model in serie.items %}
