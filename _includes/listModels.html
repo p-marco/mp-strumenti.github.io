@@ -4,7 +4,29 @@
     {% for serie in itemsBySerie %}
     <section class="pt-5 container">
 
-        {% include serie.html %}
+
+      <div class="row mt-5 mb-5  sticky-top text-center" style="background:white; top:50px">
+        <h2 class="display-3 mb-5 text-center"><span class="text-muted">Serie</span> {{ serie.name }}</h2>
+    
+      </div>
+        
+            <div class="row">
+                <div class="col-md-8">
+                    <img class="bgimage bgimg" src="https://images.unsplash.com/photo-1601956349582-ba50bedaa8ea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80">
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="row m-3">
+                    <blockquote class="blockquote">
+                        <p class="">The elements of every concept enter into logical thought at the gate of perception and make their exit at the gate of purposive action</p>
+                        <footer class="blockquote-footer m-3">Charles S. Peirce [1903], <cite title="Source Title">Harvard Lectures on Pragmatism: Lecture VII</cite></footer>
+                      </blockquote>
+                    </div>
+                    <div class="row m-3">
+                        <a class="btn btn-outline-primary btn-block">Read more about the {{ serie.name }}serie</a>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -12,7 +34,16 @@
           <div class="card-deck">
 
         {% for model in serie.items %}
-          {% include cardModel.html %}
+
+        <div class="card">
+          <div class="card-header bg-transparent">{{ model.taxonomy.model }}</div>
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1592051148515-c5c06b3f919a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ model.name }} </h5>
+          <p class="card-text">{{ model.excerpt }}</p>
+        </div>
+        <div class="card-footer bg-transparent"><a href="{{ model.url }}">Read more</a></div>
+      </div>
         {% endfor%}
         </div></div>
     {% endfor %}
