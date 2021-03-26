@@ -4,3 +4,22 @@ PROVA
         MODEL
         <h2>{{model.title}}</h2>
 {% endfor %}
+
+
+
+
+{% assign itemsBySerie = site.instruments | group_by_exp:"instrument", "instrument.taxonomy.serie" %}
+{% for serie in itemsBySerie %}
+  <h1>{{ serie.name }}</h1>
+  {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+
+<ul>
+  {% for model in serie.items %}
+    <li>
+      <a href="{{ item.url }}">{{ item.title }}</a>
+      <br>{{ item.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
+
+{% endfor %}
