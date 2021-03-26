@@ -2,6 +2,7 @@
 
 {% assign itemsBySerie = site.instruments | group_by_exp:"instrument", "instrument.taxonomy.serie" %}
     {% for serie in itemsBySerie %}
+    <h2>{{serie.name}}</h2>
     <section class="pt-5 container">
 
 
