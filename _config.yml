@@ -31,15 +31,15 @@ sass:
 
 # Set collections
 collections:
-  pragma:
-    output : true
-    title : Serie Pragma 
-  facta:
-    output : true
-    title : Serie Facta 
-  ladieci:
-    output : true
-    title : ladieci 
+  instruments:
+    output: false
+    models:
+      output: true
+    series:
+      output: false
+      pragma:
+        output: true
+        title: Serie Pragma
 plugins:
   - jekyll-sitemap
 
