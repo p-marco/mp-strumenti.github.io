@@ -1,13 +1,14 @@
 ---
-name:                  "B4f-001"
+name:                  "FRBR"
+category:               "Verso"
 images:
     thumbnail:          ""
     header:             ""
 taxonomy:
-    type:               "Serie"
-    serie:              "Pragma"
-    model:              "B4"
-    variant:            "F"
+    type:               "Model"
+    serie:              ""
+    model:              "Verso"
+    variant:            "B4.F"
 construction:
     date:
         start:          "2020-10-01"

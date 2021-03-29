@@ -1,6 +1,6 @@
 ---
 name:                  "LORE"
-tag:                    "Corsa"
+category:              "Corsa"
 status:                 "in construction"
 images:
     thumbnail:          ""
@@ -12,8 +12,8 @@ taxonomy:
     variant:            ""
 construction:
     date:
-        start:          "2020-10-01"
-        end:            "2021-04-30"
+        start:          "2021-03-27"
+        end:            "2021-10-01"
     neck:
         material:       "7 pieces Wenge, Hard Maple, Cherrywood"
         nutWidth:       "48mm"
@@ -37,4 +37,4 @@ construction:
         
 ---
 
-prova
+lore

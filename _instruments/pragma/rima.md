@@ -1,13 +1,15 @@
 ---
-name:                  "FRBR"
+name:                  "RIMA"
+category:              "Pragma"
+status:                "finished"
 images:
     thumbnail:          ""
     header:             ""
 taxonomy:
-    type:               "Model"
-    serie:              ""
-    model:              "Verso"
-    variant:            "B4.F"
+    type:               "Serie"
+    serie:              "Pragma"
+    model:              "G6"
+    variant:            ""
 construction:
     date:
         start:          "2020-10-01"
@@ -38,4 +40,4 @@ construction:
         
 ---
 
-prova
+rima
