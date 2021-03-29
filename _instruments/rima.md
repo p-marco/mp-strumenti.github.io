@@ -1,6 +1,7 @@
 ---
 name:                  "RIMA"
-tag:                    "Pragma"
+category:              "Pragma"
+status:                 "finished"
 images:
     thumbnail:          ""
     header:             ""
