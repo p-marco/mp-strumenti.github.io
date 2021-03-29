@@ -23,7 +23,7 @@ author :
       - assets/img/avatar-3x.jpg
       - assets/img/avatar-4x.jpg
 
-
+include: ["_instruments"]
 # Sass settings
 sass:
   sass_dir: assets/css
