@@ -6,5 +6,10 @@
 {% include hero.html %}
 {% include listModels.html %}
 
+
+{% for category in site.categories %}
+  <span class="entry-categories"><a href="{{ page.category-url | absolute_url }}" rel="category">{{ page.category }}</a></span>{% unless forloop.last %},{% endunless %}
+{% endfor %}
+
 </body>
 </html>
