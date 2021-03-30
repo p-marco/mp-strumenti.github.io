@@ -1,4 +1,6 @@
+---
 
+---
 
 /* 	
 	FRONTMATTER
@@ -30,6 +32,7 @@
 		$media-l: 40em ;
         $media-xl: 64em ;
 	/* COLOURS */
+		$color-white:#fbf8f4;
 		$color-grey--base: #708090;
 		$color-grey--light: #c2cfdc		;
 		$color-dark--base: #2e3943;
@@ -43,10 +46,6 @@
 
 /*	TYPOGRAPHY */
 
-.text-shadow{
-	text-shadow: 2px 2px 4px $color-dark--base;
-}
-
 
 
 /*	GRID */
@@ -55,6 +54,14 @@
 
 
 /*	COMPONENTS */
+
+.text-shadow{
+	text-shadow: 2px 2px 4px $color-dark--base;
+}
+
+.bg-white{
+	background-color: $color-white;
+}
 
 /*	SHAME */
 
