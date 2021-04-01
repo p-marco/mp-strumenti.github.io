@@ -26,5 +26,12 @@
     {% endfor %}
   </div>
 </section>
+
+<section class="pt-5 container">
+  {% for category in site.categories %}
+    <p>{{ category.title }}</p>
+  {% endfor %}
+</section>
+
 </body>
 </html>
