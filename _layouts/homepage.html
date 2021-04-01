@@ -6,10 +6,25 @@
 {% include hero.html %}
 
 
-{% assign categories = site.categories | sort %}
-{% for category in categories %}
-  <p>{{category.title}}</p>
-{% endfor %}
+<section class="pt-5 container">
+  <div class="card-deck">
 
+
+    {% for instrument in site.instruments %}
+      <div class="card mb-4">
+        <div class="card-header">
+          <p class="text-muted">{{ instrument.category }}</p>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">{{ instrument.name }}</h4>
+          <p class="card-text">{{ instrument.excerpt }}</p>
+        </div>
+        <div class="card-footer">
+          <a href="{{ instrument.url }}">Read more</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
 </body>
 </html>
