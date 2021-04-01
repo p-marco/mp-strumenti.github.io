@@ -6,13 +6,16 @@
 {% include hero.html %}
 
 
-{% for category in site.categories %}
-  <h2>{{ category[0] }}</h2>
-  <ul>
-    {% for post in category[1] %}
-      <li><a href="{{ post.url }}">{{ post.name }}</a></li>
-    {% endfor %}
-  </ul>
+
+<button id="All" onclick="filterUsingCategory('All')">
+  *Show All Posts*
+</button>
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+  {% assign cat = category | first %}
+  <button id="{{ cat }}" onclick="filterUsingCategory(this.id)">
+    {{ cat }}
+  </button>
 {% endfor %}
 
 </body>
