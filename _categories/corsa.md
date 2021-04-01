@@ -1,5 +1,6 @@
 ---
 layout: serie
+title: "Corsa"
 category: "Corsa"
 blockquote:
     text: "Only the Time is ours; the Nature placed us in that fleeting and slippery possession."

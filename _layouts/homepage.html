@@ -6,16 +6,9 @@
 {% include hero.html %}
 
 
-
-<button id="All" onclick="filterUsingCategory('All')">
-  *Show All Posts*
-</button>
 {% assign categories = site.categories | sort %}
 {% for category in categories %}
-  {% assign cat = category | first %}
-  <button id="{{ cat }}" onclick="filterUsingCategory(this.id)">
-    {{ cat }}
-  </button>
+  <p>{{category.title}}</p>
 {% endfor %}
 
 </body>

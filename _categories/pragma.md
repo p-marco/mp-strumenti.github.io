@@ -1,5 +1,6 @@
 ---
 layout: serie
+title: "Pragma"
 category: "Pragma"
 blockquote:
     text: "The elements of every concept enter into logical thought at the gate of perception and make their exit at the gate of purposive action"
