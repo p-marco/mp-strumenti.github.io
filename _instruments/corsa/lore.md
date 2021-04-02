@@ -31,9 +31,9 @@ construction:
         pickups:        "2 HB Wilkinson"
         shielding:      ""
     finish:             "Wax and linen oil"
-hardware:
-    locks:              "Schaller-style"
-    bridge:             "Headless tremolo zinc alloy"
+    hardware:
+        locks:              "Schaller-style"
+        bridge:             "Headless tremolo zinc alloy"
 
 
 images:
