@@ -28,7 +28,7 @@ construction:
         thickness:      "47mm"
     electronics:
         wiring:         "5-way rotary Schaller Megaswitch, 1 tone, 1 volume by Bourns; Cap .022 Orange Drop"
-        pickups:        "2 HB Wilkinson"
+        pickups:        "2 HB Wilkinson WOH (10k at Neck; 20.15K at Bridge)"
         shielding:      ""
     finish:             "Wax and linen oil"
     hardware:
