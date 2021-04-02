@@ -33,8 +33,12 @@ construction:
     locks:              "Schaller-style"
     bridge:             "Headless tremolo zinc alloy"
     finish:             "Wax and linen oil"
+
+images:
+    thumbnail:          "lore/hero.png"
+    header:             "lore/hero.png"
 layout: detailView
-        
+
 ---
 
 lore
