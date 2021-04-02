@@ -39,7 +39,7 @@ construction:
 images:
     thumbnail:          "lore/hero.png"
     header:             "lore/hero.png"
-layout: detailView
+layout: instrument
 
 ---
 

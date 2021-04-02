@@ -33,11 +33,12 @@ construction:
         wiring:         "3 positions, 1 tone, 1 volume, Kill switch"
         pickups:        "2 HB Wilkinson"
         shielding:      "Copper tape"
-    locks:              "Schaller-style"
-    bridge:             "Headless fixed zinc alloy"
+    hardware:
+        locks:              "Schaller-style"
+        bridge:             "Headless fixed zinc alloy"
     finish:             "Wax and linen oil"
 
-        
+layout: instrument        
 ---
 
 rima
