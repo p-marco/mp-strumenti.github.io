@@ -51,7 +51,7 @@
     </section>
 
     <section class="col-md-3">
-{% capture gallery_path %}assets/images/instrument{{ page.name }}{% endcapture %}
+{% capture gallery_path %}assets/images/instrument/{{ page.name }}{% endcapture %}
 {% for image in site.static_files %}
     {% if image.path contains gallery_path %}
         <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />

@@ -1,5 +1,5 @@
 ---
-name:                  "LORE"
+name:                  "lore"
 category:              "Corsa"
 status:                 "Under construction"
 images:
