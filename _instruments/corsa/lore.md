@@ -3,8 +3,8 @@ name:                  "LORE"
 category:              "Corsa"
 status:                 "Under construction"
 images:
-    thumbnail:          "lore/hero.png"
-    header:             "lore/hero.png"          ""
+    thumbnail:          ""
+    header:             ""
 taxonomy:
     type:               "Linea"
     serie:              ""
@@ -34,6 +34,11 @@ construction:
     hardware:
         locks:          "Schaller-style"
         bridge:         "Headless tremolo zinc alloy"
+
+
+images:
+    thumbnail:          "lore/hero.png"
+    header:             "lore/hero.png"
 layout: detailView
 
 ---
