@@ -19,7 +19,7 @@ construction:
         nutWidth:       "48mm"
         thickness:      "18mm at 1st, 20mm at 12th"
     fretboard:
-        material:       "Cherrywood"
+        material:       "Wenge"
         thickness:      "5mm"  
         radius:         "300mm"
         frets:          "Jescar Evo"
