@@ -36,7 +36,7 @@
 {% for category in site.categories %}
     {% assign cat = category.title %}
     <h6><a href="#">{{ cat }}</a></h6>
-    {% for instrument in site.instruments | where "instrument.category", {{ cat }} %}
+    {% for instrument in site.categories.cat %}
 
       <p>{{ instrument.name }}</p>
     {% endfor %}
