@@ -33,7 +33,7 @@ construction:
     locks:              "Schaller-style"
     bridge:             "Headless tremolo zinc alloy"
     finish:             "Wax and linen oil"
-
+layout: detailView
         
 ---
 
