@@ -60,6 +60,12 @@
             {% endfor %}
           </div>
           
+          <div class="image-gallery">
+            {% for image in {{ site.baseurl}}/assets/images/instruments/{{page.name}} %}
+                <img src="{{ site.baseurl }}{{ image.path }}"/>
+            {% endfor %}
+          </div>
+          
           
 </section>
 
