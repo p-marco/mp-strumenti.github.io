@@ -61,7 +61,7 @@
           </div>
           <p>{{ site.baseurl}}/assets/images/instruments/{{page.name}}</p>
           <div class="image-gallery">
-            {% for image in {{ site.baseurl}}/assets/images/instruments/{{page.name}} %}
+            {% for image in {{ site.baseurl}}/assets/images/instruments/{{page.name}}/ %}
                 <img src="{{ site.baseurl }}{{ image.path }}"/>
             {% endfor %}
           </div>
