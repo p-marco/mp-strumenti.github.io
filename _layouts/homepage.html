@@ -10,6 +10,7 @@
 
   {% for category in site.categories %}
   {% assign cat = category.title %}
+  <section class="sec-category py-5">
   {% include category.html %}
   <div class="card-deck">
     {% for instrument in site.instruments %}
@@ -18,6 +19,7 @@
       {% endif %}
     {% endfor %}
   </div>
+</section>
 {% endfor %}
 
 
