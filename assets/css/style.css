@@ -98,3 +98,10 @@
 .text-muted{
 	color: #433927
 }
+
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+}
