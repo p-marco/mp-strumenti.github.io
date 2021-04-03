@@ -5,12 +5,12 @@
 {% include navigation.html %}
 {% include detailHero.html %}
 
-<section class="px-md-5 pt-5">
+<section class="container pt-5">
 
 
 <section class="row">
 
-    <section class="col-md-3 border-right">
+    <section class="col-md-4 border-right">
         <h2 class="display">Specs</h2>
 
         <h4 class="mt-5">Neck</h4>
@@ -44,34 +44,35 @@
     </section>
 
 
-    <section class="col-md-6 lead">
+    <section class="col-md-8 lead">
         <div class="p-5">
             {{ content }}
         </div>
     </section>
 
-    <section class="col-md-3">
-
-        <div class="image-gallery">
-            {% for image in site.static_files %}
-              {% if image.path contains '{{page.name}}' %}
-                <img src="{{ site.baseurl }}{{ image.path }}"/>
-              {% endif %}
-            {% endfor %}
-          </div>
-          <p>{{ site.baseurl}}/assets/images/instruments/{{page.name}}</p>
-          <div class="image-gallery">
-            {% for image in {{ site.baseurl}}/assets/images/instruments/{{page.name}}/ %}
-                <img src="{{ site.baseurl }}{{ image.path }}"/>
-            {% endfor %}
-          </div>
-          
-          
-</section>
+    
 
 
 </section>
 
+<section class="row">
+
+    <div class="image-gallery">
+        {% for image in site.static_files %}
+          {% if image.path contains '{{page.name}}' %}
+            <img src="{{ site.baseurl }}{{ image.path }}"/>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <p>{{ site.baseurl}}/assets/images/instruments/{{page.name}}</p>
+      <div class="image-gallery">
+        {% for image in {{ site.baseurl}}/assets/images/instruments/{{page.name}}/ %}
+            <img src="{{ site.baseurl }}{{ image.path }}"/>
+        {% endfor %}
+      </div>
+      
+      
+</section>
 
 
 </section>
