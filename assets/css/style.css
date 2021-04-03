@@ -33,7 +33,11 @@
   }
   
   p, .display{
-	  font-family:'Playfair Display', serif;
+	  font-family:'Merriweather', serif;
+  }
+
+  .text-light{
+	  font-weight: 300;
   }
   
   .card-img-top{
@@ -76,3 +80,19 @@
 	left: 0.5em;
 	margin-right: -50%;
   }
+
+
+
+
+.bg-white2{
+	background-color: #fbf8f4
+}
+
+
+*{
+	color:#2e3943
+}
+
+.text-muted{
+	color: #433927
+}

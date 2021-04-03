@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 {% include head.html %}
-<body class="bg-white">
+<body class="bg-white2">
 {% include navigation.html %}
 
 <section class="container pt-5">
@@ -10,8 +10,7 @@
 
 <section class="row">
 
-    <section class="col-md-5 border-right pr-5">
-        <h2 class="display">Specifications</h2>
+    <section class="col-md-5 border-right pr-5 text-muted">
 
         <h4 class="mt-5">Neck</h4>
         <p>
@@ -45,7 +44,7 @@
 
 
     <section class="col-md-7">
-        <div class="p-5 lead">
+        <div class="p-5 lead text-light">
             {{ content }}
         </div>
     </section>
@@ -55,7 +54,7 @@
 
 </section>
 
-<section class="row">
+<section class="row pt-5">
 
     {% assign imgNameStart = page.name | remove: page.dir | remove: "/" %}
     {% assign imgBasePath = imgNameStart | prepend: "assets/images/instruments/" %}
