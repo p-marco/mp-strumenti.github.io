@@ -43,5 +43,19 @@
 {% endfor %}
 </section>
 
+<h5>Categories-2</h5>
+{% for category in site.categories %}
+    {% assign cat = category.title %}
+    <h6>{{cat}}</h6>
+
+    {% for instrument in site.instruments %}
+      {% if instrument.category == cat %}
+
+        <p>{{instrument.name}}</p>
+      {% endif %}
+    {% endfor %}
+{% endfor %}
+
+
 </body>
 </html>
