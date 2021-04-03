@@ -22,45 +22,6 @@
 </section>
 {% endfor %}
 
-
-  <div class="card-deck">
-
-
-    {% for instrument in site.instruments %}
-      <div class="card mb-4">
-        <div class="card-header">
-          <p class="text-muted">{{ instrument.category }}</p>
-        </div>
-        <div class="card-body">
-          <h4 class="card-title">{{ instrument.name }}</h4>
-          <p class="card-text">{{ instrument.excerpt }}</p>
-        </div>
-        <div class="card-footer">
-          <a href="{{ instrument.url }}">Read more</a>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
 </section>
-
-<section class="pt-5 container">
-  {% for category in site.categories %}
-    <p>{{ category.title }}</p>
-  {% endfor %}
-
-  <h5>Categories</h5>
-{% for category in site.categories %}
-    {% assign cat = category.title %}
-    <h6><a href="#">{{ cat }}</a></h6>
-    {% for instrument in site.categories.cat %}
-
-      <p>{{ instrument.name }}</p>
-    {% endfor %}
-{% endfor %}
-</section>
-
-<h5>Categories-2</h5>
-
-
 </body>
 </html>
