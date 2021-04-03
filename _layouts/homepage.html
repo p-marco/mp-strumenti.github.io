@@ -12,12 +12,14 @@
   {% assign cat = category.title %}
   <section class="sec-category py-5">
   {% include category.html %}
+  <div class="col-lg-8 offset-lg-4">
   <div class="card-deck">
     {% for instrument in site.instruments %}
       {% if instrument.category == cat %}
         {% include instrumentCard.html %}
       {% endif %}
     {% endfor %}
+  </div>
   </div>
 </section>
 {% endfor %}
