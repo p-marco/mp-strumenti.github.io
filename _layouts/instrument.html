@@ -57,24 +57,10 @@
 
 <section class="row">
 
-    <div class="image-gallery">
-        {% for image in site.static_files %}
-          {% if image.path contains '{{page.name}}' %}
-            <img src="{{ site.baseurl }}{{ image.path }}"/>
-          {% endif %}
-        {% endfor %}
-      </div>
-      <p>{{ site.baseurl}}/assets/images/instruments/{{page.name}}</p>
-      <div class="image-gallery">
-        {% assign imgNameStart = page.name | remove: page.dir | remove: "/" %}
-        {% assign imgBasePath = imgNameStart | prepend: "assets/images/instruments/" %}
-        {% for img in site.static_files %}
-        {% if img.path contains imgBasePath %}
-        <img src="{{ site.baseurl }}{{ img.path }}">
-        {% endif %}
-        {% endfor %}
-      </div>
-      
+    {% assign imgNameStart = page.name | remove: page.dir | remove: "/" %}
+    {% assign imgBasePath = imgNameStart | prepend: "assets/images/instruments/" %}
+    {% include imageGallery.html %}
+
       
 </section>
 
