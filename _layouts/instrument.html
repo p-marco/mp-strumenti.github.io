@@ -10,7 +10,7 @@
 
 <section class="row">
 
-    <section class="col-md-6 border-right pr-5">
+    <section class="col-md-5 border-right pr-5">
         <h2 class="display">Specifications</h2>
 
         <h4 class="mt-5">Neck</h4>
@@ -44,8 +44,8 @@
     </section>
 
 
-    <section class="col-md-6">
-        <div class="p-5">
+    <section class="col-md-7">
+        <div class="p-5 lead">
             {{ content }}
         </div>
     </section>
@@ -66,8 +66,12 @@
       </div>
       <p>{{ site.baseurl}}/assets/images/instruments/{{page.name}}</p>
       <div class="image-gallery">
-        {% for image in {{ site.baseurl}}/assets/images/instruments/{{page.name}}/ %}
-            <img src="{{ site.baseurl }}{{ image.path }}"/>
+        {% assign imgNameStart = page.name | remove: page.dir | remove: "/" %}
+        {% assign imgBasePath = imgNameStart | prepend: "assets/images/instruments/" %}
+        {% for img in site.static_files %}
+        {% if img.path contains imgBasePath %}
+        <img src="{{ site.baseurl }}{{ img.path }}">
+        {% endif %}
         {% endfor %}
       </div>
       
