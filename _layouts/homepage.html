@@ -7,6 +7,20 @@
 
 
 <section class="pt-5 container">
+
+  {% for category in site.categories %}
+  {% assign cat = category.title %}
+  {% include category.html %}
+  <div class="card-deck">
+    {% for instrument in site.instruments %}
+      {% if instrument.category == cat %}
+        {% include instrumentCard.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endfor %}
+
+
   <div class="card-deck">
 
 
@@ -44,17 +58,6 @@
 </section>
 
 <h5>Categories-2</h5>
-{% for category in site.categories %}
-    {% assign cat = category.title %}
-    <h6>{{cat}}</h6>
-
-    {% for instrument in site.instruments %}
-      {% if instrument.category == cat %}
-
-        <p>{{instrument.name}}</p>
-      {% endif %}
-    {% endfor %}
-{% endfor %}
 
 
 </body>
