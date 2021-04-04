@@ -3,8 +3,8 @@ name:                  "RIMA"
 category:              "Pragma"
 status:                "finished"
 images:
-    thumbnail:          ""
-    header:             ""
+    thumbnail:          "rima/header.jpg"
+    header:             "rima/header.jpg"
 taxonomy:
     type:               "Serie"
     serie:              "Pragma"
