@@ -2,10 +2,11 @@
 layout: serie
 title: "Pragma"
 category: "Pragma"
+order: "1"
 type: "Serie"
 blockquote:
-    text: "The elements of every concept enter into logical thought at the gate of perception and make their exit at the gate of purposive action"
-    author: "Charles S. Peirce [1903]"
+    text: "The elements of every concept enter into logical thought at the gate of perception and make their exit at the gate of purposive action."
+    author: "Charles S. Peirce"
     source: "Harvard Lectures on Pragmatism: Lecture VII"
 ---
 

@@ -2,6 +2,7 @@
 layout: serie
 title: "Corsa"
 category: "Corsa"
+order: "3"
 type: "Linea"
 blockquote:
     text: "Only the Time is ours; the Nature placed us in that fleeting and slippery possession."
