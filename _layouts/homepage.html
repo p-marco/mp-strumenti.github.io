@@ -16,8 +16,8 @@
   {% assign cat = category.title %}
   <section class="sec-category py-5">
   {% include category.html %}
-  <div class="col-lg-10 offset-lg-1">
-  <div class="card-deck">
+  <div class="">
+  <div class="image-gallery">
     {% for instrument in site.instruments %}
       {% if instrument.category == cat %}
         {% include instrumentCard.html %}
