@@ -1,6 +1,6 @@
 ---
 layout: serie
-title: "Other Models"
+title: "Other"
 category: "other"
 order: "4"
 type: ""
