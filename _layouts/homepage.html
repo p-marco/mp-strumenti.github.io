@@ -11,8 +11,8 @@
     <h2 class="display-2 py-5"><span class="text-muted">Instruments</span></h2>
 
   </div>
-
-  {% for category in site.categories | sort: 'category.order' %}
+  {% assign categories = site.categories | sort: 'order' %}
+  {% for category in categories %}
   {% assign cat = category.title %}
   <section class="sec-category py-5">
   {% include category.html %}
