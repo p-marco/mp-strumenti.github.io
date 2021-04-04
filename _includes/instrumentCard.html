@@ -8,15 +8,19 @@
     top: 45%;
     left: 0;
     width: 100%;
+    background: rgba(0,0,0,.35)
+}
+.img-gallery.grayscale:not(:hover){
+    filter: grayscale(100%) brightness(120%)
 }
 </style>
 
 
 <div class="box thumbnail">
     <a href="{{ instrument.url }}">
-      <img src="{{ site.baseurl}}/assets/images/instruments/{{ instrument.images.thumbnail }}"  class="img-gallery" />
+      <img src="{{ site.baseurl}}/assets/images/instruments/{{ instrument.images.thumbnail }}"  class="img-gallery grayscale" />
      <div class="caption text-center">
-        <h5 class="text-uppercase display-4">{{ instrument.name }}</h5>
+        <h5 class="text-uppercase display-4 pt3">{{ instrument.name }}</h5>
         <p class="btn btn-outline-light"> Read more</p>
     </div>
 </a>
