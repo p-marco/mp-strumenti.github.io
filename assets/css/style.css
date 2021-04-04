@@ -99,6 +99,9 @@
 	color: #433927
 }
 
+.text-accent--light{
+	color:#908470
+}
 
 .card-deck {
     display: grid;
