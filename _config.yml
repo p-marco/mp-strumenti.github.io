@@ -23,6 +23,10 @@ author :
       - assets/img/avatar-3x.jpg
       - assets/img/avatar-4x.jpg
 
+contact:
+    email:  contact@mp-strumenti.it
+    instagram: mp_strumenti
+      
 include: ["_instruments"]
 # Sass settings
 sass:

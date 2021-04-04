@@ -1,0 +1,44 @@
+ <!-- Footer -->
+        <footer class="px-md-5">
+        	<div class="footer-top">
+		        <div class="container">
+		        	<div class="row">
+		        		<div class="col-md-3 footer-about wow fadeInUp">
+		        			<h3>About</h3>
+		        			<p>
+		        				We are a young company always looking for new and creative ideas to help you with our products in your everyday work.
+		        			</p>
+		        			<p>{{ site.author.name }}</p>
+	                    </div>
+		        		<div class="col-md-4 offset-md-1 footer-contact wow fadeInDown">
+		        			<h3>Contact</h3>
+		                	<p><i class="fas fa-envelope"></i> Email: <a href="{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+		                	<p><i class="fab fa-instagram"></i> Instagram:  <a href="http://instagram.com/{{ site.contact.instagram }}">@{{ site.contact.instagram }}</a></p>
+	                    </div>
+	                    <div class="col-md-4 footer-links wow fadeInUp">
+	                    	<div class="row">
+	                    		<div class="col">
+	                    			<h3>Links</h3>
+	                    		</div>
+	                    	</div>
+	                    	<div class="row">
+	                    		<div class="col-md-6">
+                                    {% assign navigation_pages = site.html_pages %}
+      {% for item in navigation_pages %}
+            <p><a href="{{ item.url }}" class="" {% if item.url == page.url %}class="active"{% endif %}>
+              {{ item.title }}
+            </a></p>
+      {% endfor %}
+	                    			
+	                    		</div>
+	                    		<div class="col-md-6">
+	                    			<p><a href="#">Plans &amp; pricing</a></p>
+	                    			<p><a href="#">Affiliates</a></p>
+	                    			<p><a href="#">Terms</a></p>
+	                    		</div>
+	                    	</div>
+	                    </div>
+		            </div>
+		        </div>
+	        </div>
+        </footer>
