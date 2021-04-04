@@ -1,9 +1,6 @@
 ---
-name:                  "FRBR"
+name:                  "frbr"
 category:               "Verso"
-images:
-    thumbnail:          ""
-    header:             ""
 taxonomy:
     type:               "Model"
     serie:              ""
@@ -35,8 +32,10 @@ construction:
     locks:              "Schaller-style"
     bridge:             "Headless fixed zinc alloy"
     finish:             "Wax and linen oil"
-
-        
+images:
+    thumbnail:          "frbr/header.jpg"
+    header:             "frbr/header.jpg" 
+layout: instrument
 ---
 
-prova
+FRBR
