@@ -134,3 +134,28 @@
   &:hover {
     transform: scale(1.05);
   }
+
+
+
+  blockquote:before {
+	content: '\201C';
+	position: absolute;
+	top: 0em;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 3rem;
+	height: 2rem;
+	font: 6em/1.08em;
+	color: #708090;
+	text-align: center;
+  }
+
+
+
+  nav a {
+	  color: #708090 !important
+  }
+
+  nav a:hover{
+	  color: #69a3dc
+  }
