@@ -1,5 +1,5 @@
 ---
-name:                  "RIMA"
+name:                  "rima"
 category:              "Pragma"
 status:                "finished"
 images:
