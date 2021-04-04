@@ -7,7 +7,11 @@
     position: absolute;
     top: 45%;
     left: 0;
-    width: 100%;
+    right:0;
+    width: 70%;
+    padding:2rem;
+    margin-left:auto;
+    margin-right:auto;
     background: rgba(0,0,0,.35)
 }
 .img-gallery.grayscale:not(:hover){
@@ -20,8 +24,8 @@
     <a href="{{ instrument.url }}">
       <img src="{{ site.baseurl}}/assets/images/instruments/{{ instrument.images.thumbnail }}"  class="img-gallery grayscale" />
      <div class="caption text-center">
-        <h5 class="text-uppercase display-4 pt3">{{ instrument.name }}</h5>
-        <p class="btn btn-outline-light"> Read more</p>
+        <h5 class="text-uppercase display-4 pt3 text-white">{{ instrument.name }}</h5>
+        <small class="btn btn-outline-light"> Read more</small>
     </div>
 </a>
 
