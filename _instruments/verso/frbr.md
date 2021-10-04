@@ -31,7 +31,7 @@ construction:
         pickups:        "2 Single coils"
     hardware:
         locks:          "Standard"
-        locking:        "Guitar 4 Musician"
+        locking:        "Technology 4 Musician"
         bridge:         "Headless fixed zinc alloy"
     finish:             "Wax and linen oil"
 images:
