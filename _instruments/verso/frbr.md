@@ -35,7 +35,7 @@ construction:
         bridge:         "Headless fixed zinc alloy"
     finish:             "Wax and linen oil"
 images:
-    thumbnail:          "frbr/thumb.jpg"
+    thumbnail:          "frbr/header.jpg"
     header:             "frbr/header.jpg" 
 layout: instrument
 ---
