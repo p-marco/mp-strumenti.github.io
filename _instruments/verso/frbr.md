@@ -7,6 +7,7 @@ taxonomy:
     model:              "Verso"
     variant:            "B4.F"
 construction:
+    status:             "finished"
     date:
         start:          "2021-03"
         end:            "2021-10"

@@ -14,14 +14,15 @@
 <section class="row">
 
     <section class="col-md-5 border-right pr-5 text-muted">
-        <p class="p-5 border">
-            <span class="">{{page.construction.date.start}}</span>
-            <span class="text-muted">-</span>
-            <span class="">{{page.construction.date.end}}</span>
-        </p>
+        <h4 class="mt-5">Construction</h4>
+            <p><span class="text-muted">Status:</span>{{page.construction.status}}</p>
+            <p><span class="text-muted">Started:</span>{{page.construction.date.start}}</p>
+            <p><span class="text-muted">Finished:</span>{{page.construction.end}}</p>
+
 
         <h4 class="mt-5">Neck</h4>
         <p>
+            <span class="text-muted">Neck:</span>
             <span>{{ page.construction.neck.material }}</span>
             <span class="text-muted">; width at nut:</span>
             <span>{{ page.construction.neck.nutWidth }}</span>
