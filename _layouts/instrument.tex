@@ -1,0 +1,132 @@
+\documentclass{report}
+
+\usepackage[a5paper]{geometry}
+\usepackage{tikz}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\setmainfont{Noto Sans}
+\usepackage{lipsum}
+
+\usepackage{multicol}
+\usepackage{blindtext}
+
+
+\definecolor{myBlack1}{RGB}{0, 16, 20}
+\definecolor{mySand}{RGB}{255, 236, 153}
+
+\setlength\parindent{0pt}
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+\pagecolor{myBlack1}
+
+\begin{center}
+{.}\\
+\vspace{36pt}
+\begin{tikzpicture}
+ 
+    \node[rectangle,draw={mySand},font=\fontsize{64}{144} \selectfont, text={mySand},inner sep=24pt] (r) at (0,0) {{{ page.name | uppercase }}};
+ \vspace{24pt}
+\end{tikzpicture}\\
+    \textcolor{mySand}{       
+        \Large {{page.taxonomy.serie}} {{page.taxonomy.model}}\\
+        \footnotesize {{site.author.name}}
+    }
+\vspace{64pt}
+    \begin{figure}[h!]
+  \includegraphics[width=\linewidth]{{{ site.baseurl}}/assets/images/herobg.jpg}
+\end{figure}
+\end{center}
+
+\newpage
+\pagecolor{white}
+
+    \begin{figure}[h!]
+  \includegraphics[width=\linewidth]{{{ site.baseurl}}/assets/images/instruments/{{ page.images.header }}}
+\end{figure}
+
+
+
+\paragraph{Date}
+
+{{page.construction.date.start}} --
+{{page.construction.date.end}}
+
+\paragraph{Neck}
+  {{page.construction.neck.material }}
+  ; width at nut:
+  {{page.construction.neck.nutWidth }}
+  ; thickness:
+  {{page.construction.neck.thickness }} \\
+  {{page.construction.fretboard.thickness}} fretboard in 
+  {{page.construction.fretboard.material}} with a 
+  {{page.construction.fretboard.radius}} radius. \\
+  Frets: 
+  {{page.construction.fretboard.frets}}
+
+\paragraph{Body}
+  {{page.construction.body.thickness}} body in 
+  {{page.construction.body.material }}. \\
+  {% if page.construction.top %}
+      {{page.construction.top.thickness}} top in  
+      {{page.construction.top.material}.\\
+  {% endif %}
+
+\paragraph{Electronics}
+
+    {{page.construction.electronics.wiring}} \\
+    {{page.construction.electronics.pickups}}
+
+\paragraph{Finish}
+  {{page.construction.finish}
+
+\paragraph{Hardware}
+  Strap lock: {{page.construction.hardware.locks}} \\
+Bridge: {{page.construction.hardware.bridge}} \\
+Locking: {{page.construction.hardware.locking}}
+
+
+
+
+\newpage
+\pagecolor{white}
+
+
+  \begin{multicols}{2}[\textbf{Example for a three column text}]
+    \footnotesize{{ content }}
+  \end{multicols}
+\vfill
+
+    \begin{figure}[h!]
+  \includegraphics[width=\linewidth]{./images/herobg.jpg}
+\end{figure}
+
+\newpage
+\pagecolor{white}
+
+
+\vfill
+
+\begin{center}
+mp-strumenti
+\end{center}
+
+
+\newpage
+
+
+\newpage
+
+
+\end{document}

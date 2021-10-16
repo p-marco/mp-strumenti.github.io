@@ -13,7 +13,7 @@ taxonomy:
 construction:
     date:
         start:          "2020-10-01"
-        end:            "2021-04-30"
+        end:            "2021-10-16"
     neck:
         material:       "7 pieces Sapele, Hard Maple, Birch"
         nutWidth:       "43mm"
@@ -28,11 +28,11 @@ construction:
         thickness:      "30mm"
     top:
         material:       "2 pieces bookmatched Black Walnut"
-        thickness:      "8mm"
+        thickness:      "12mm"
     electronics:
-        wiring:         "3 positions, 1 tone, 1 volume, Kill switch"
-        pickups:        "2 HB Wilkinson"
-        shielding:      "Copper tape"
+        wiring:         "3 positions, 1 tone + Coil tap, 1 Master Volume, Kill switch"
+        pickups:        "2 HB Wilkinson Alnico V"
+        shielding:      "None"
     hardware:
         locks:              "Schaller-style"
         bridge:             "Headless fixed zinc alloy"
