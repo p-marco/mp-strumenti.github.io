@@ -38,7 +38,7 @@ construction:
         bridge:             "Headless fixed zinc alloy"
     finish:             "Wax and linen oil"
 
-layout: instrument        
+layout: tex        
 ---
 
 rima
