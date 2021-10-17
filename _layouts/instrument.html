@@ -14,10 +14,7 @@
 <section class="row">
 
     <section class="col-md-5 border-right pr-5 text-muted">
-        <h4 class="mt-5">Construction</h4>
-            <p><span class="text-muted">Status:</span>{{page.construction.status}}</p>
-            <p><span class="text-muted">Started:</span>{{page.construction.date.start}}</p>
-            <p><span class="text-muted">Finished:</span>{{page.construction.date.end}}</p>
+
 
 
         <h4 class="mt-5">Neck</h4>
@@ -51,9 +48,17 @@
         <p class="">{{page.construction.finish}}</p>
 
         <h4 class="mt-5">Hardware</h4>
-        <p class=""><span class="text-muted">Strap lock:</span>{{page.construction.hardware.locks}}</p>
-        <p class=""><span class="text-muted">Bridge:</span>{{page.construction.hardware.bridge}}</p>
-        <p class=""><span class="text-muted">Locking:</span>{{page.construction.hardware.locking}}</p>
+        <p class=""><span class="text-muted">Strap lock: </span>{{page.construction.hardware.locks}}</p>
+        <p class=""><span class="text-muted">Bridge: </span>{{page.construction.hardware.bridge}}</p>
+        <p class=""><span class="text-muted">Locking: </span>{{page.construction.hardware.locking}}</p>
+
+        <h4 class="mt-5">Construction</h4>
+        <p><span class="text-muted">Status:</span>{{page.construction.status}}</p>
+        <p><span class="text-muted">Started in </span>{{page.construction.date.start}}
+        {% if page.construction.date.end %}
+            <span class="text-muted"> and finished on</span>{{page.construction.date.end}}
+        {% endif %}
+        </p>
 
     </section>
 

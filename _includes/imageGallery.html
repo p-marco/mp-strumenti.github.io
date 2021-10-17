@@ -4,7 +4,7 @@
     {% for img in site.static_files %}
     {% if img.path contains imgBasePath %}
     <div class="box" id="gallery" data-toggle="modal" data-target="#exampleModal">
-          <img src="{{ site.imagesurl }}{{ img.path }} " alt="{{img.path}}"  class="img-gallery" data-target="#carouselExample"  />
+          <img src="{{ site.imagesurl }}{{ img.path }} " alt="{{img.path}}"  class="img-gallery rounded-circle" data-target="#carouselExample"  />
     </div>
     {% endif %}
     {% endfor %}

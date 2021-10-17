@@ -118,7 +118,7 @@
    .image-gallery {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(15vw,min-content));
     justify-content: center;
     padding: 4px;
   }
@@ -131,7 +131,7 @@
   }
 
   .img-gallery {
-	width: 100%;
+	width: 80%;
 	object-fit: cover;
   transform: scale(1);
   transition: all 0.3s ease-in-out;

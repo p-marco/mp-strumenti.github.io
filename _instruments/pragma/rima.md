@@ -38,7 +38,13 @@ construction:
         bridge:             "Headless fixed zinc alloy"
     finish:             "Wax and linen oil"
 
-layout: tex        
+layout: instrument        
 ---
 
-rima
+RIMA is a 6-string guitar tailored for Riccardo.
+
+It had to be versatile, for it we choose to install a coil tap on the Tone pot, in order to guarantee a complete set of sounds. In addition to the classic 3-positions pickup switch, a kill switch found place in the electronics.
+
+The choice of wood yields for a mellow tone with a lot of sustain, and the guitar spaces from classic rock sounds to jazzy vibes, alongside to fusion and funky possibilities.
+
+The walnut top adds clarity to a well balanced instrument in terms of frequencies, while the mahogany core equilibrate it with their basses and sustain.
